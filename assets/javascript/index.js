@@ -8,7 +8,7 @@ $("#search-btn").on("click", function() {
 
 });
 
-// Insert ajax call hereop
+// Insert ajax call here
 
 // yelp API?
 // $.ajax({
