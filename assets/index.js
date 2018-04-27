@@ -5,7 +5,6 @@ let apiKey;
 
 $("#search-btn").on("click", function() {
     console.log("test");
-
 });
 
 // Insert ajax call hereop

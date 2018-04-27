@@ -1,7 +1,22 @@
 body {
-    /* background: yellow; */
+
+}
+
+p {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.nav {
+    
+}
+
+.lead {
+    background-color: white;
+    opacity: .2;
 }
 
 .jumbotron {
-    opacity: .5;
+    background-image: url("../images/jumbo.jpeg");
+    height: 90%;
 }
+
