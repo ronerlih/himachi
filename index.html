@@ -2,11 +2,85 @@
 <html>
     <head>
         <title>Hamachi!</title>
-        <link href="assets/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
 
     <body>
-        <p>test</p>
+
+        <!-- Navigation Bar -->
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Help!</a>
+            </li>
+        </ul>
+
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, Welcome to Hamachi!</h1>
+            <p class="lead">We'll help you find all the best Japanese food in your area! Just fill out the form below!</p>
+            <hr class="my-4">
+            <form>
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-form-label"></label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" placeholder="San Francisco..." id="example-text-input">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-form-label"></label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" placeholder="Tuna" id="example-text-input">
+                    </div>
+                </div>
+                <a class="btn btn-primary btn-lg" id = "search-btn" href="#" role="button">Search!</a>
+            </form>
+        </div>
+
+        <!-- Panels/cards -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad repellat in odio perferendis debitis dolores sit doloremque. Officiis optio perferendis nostrum molestiae totam vel impedit hic ullam, sunt similique.</p>
+                    <a class="btn btn-primary btn-lg" id = "search-btn" href="#" role="button">What!</a>
+                </div>
+                <div class="col-md-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad repellat in odio perferendis debitis dolores sit doloremque. Officiis optio perferendis nostrum molestiae totam vel impedit hic ullam, sunt similique.</p>
+                    <a class="btn btn-primary btn-lg" id = "search-btn" href="#" role="button">Button!</a>
+
+                </div>
+                <div class="col-md-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad repellat in odio perferendis debitis dolores sit doloremque. Officiis optio perferendis nostrum molestiae totam vel impedit hic ullam, sunt similique.</p>
+                    <a class="btn btn-primary btn-lg" id = "search-btn" href="#" role="button">Test!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <hr>
+            
+            <div class="footer">
+
+            </div>
+        </div>
+
+        <script
+            src="http://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script src="assets/javascript/index.js"></script>
     </body>
 
 </html>
