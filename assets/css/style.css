@@ -1,12 +1,14 @@
 body {
-
+    background-color: white;
 }
 
 p {
     font-family: 'Do Hyeon', sans-serif;
+    color: black;
 }
 
 .nav {
+    font-family: 'Black Han Sans', sans-serif;
     
 }
 
@@ -17,6 +19,26 @@ p {
 
 .jumbotron {
     background-image: url("../images/jumbo.jpeg");
-    height: 90%;
+    height: 100%;
+}
+
+.test {
+    margin-bottom: 20px;
+}
+
+.form-check-label {
+    color: black;
+}
+
+.btn-info {
+    margin-top: 45px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
 }
 

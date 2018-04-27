@@ -2,9 +2,17 @@
 <html>
     <head>
         <title>Hamachi!</title>
+        <!-- Google Fonts CDN -->
+        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Gugi" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+
+        <!-- Reset CSS -->
         <link rel="stylesheet" href="assets/css/reset.css">
+
+        <!-- Bootstrap CDN  -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
 
@@ -28,24 +36,54 @@
 
         <!-- Jumbotron -->
         <div class="jumbotron">
-            <h1 class="display-4">Hello, Welcome to Hamachi!</h1>
-            <p class="lead">We'll help you find all the best Japanese food in your area! Just fill out the form below!</p>
+            <!-- <h1 class="display-4">Hello, Welcome to Hamachi!</h1> -->
+            <!-- <p class="lead">We'll help you find all the best Japanese food in your area! Just fill out the form below!</p> -->
             <hr class="my-4">
-            <form>
-                <div class="form-group row">
-                    <label for="example-text-input" class="col-form-label"></label>
-                    <div class="col-10">
-                        <input class="form-control" type="text" placeholder="San Francisco..." id="example-text-input">
-                    </div>
+        </div>
+
+        <div class="contaimer">
+            <div class="row test">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <form>
+                        <div class="form-group row">
+                            <label for="location" class="col-form-label"></label>
+                            <div class="col-10">
+                                <input class="form-control" text="location" type="text" id="example-text-input">
+                            </div>
+                        </div>
+                            <div class="col-10">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            5 Miles
+                                        </label>
+                                        </div>
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                        <label class="form-check-label" for="exampleRadios2">
+                                            10 Miles
+                                        </label>
+                                        </div>
+                                        <div class="form-check disabled">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                        <label class="form-check-label" for="exampleRadios3">
+                                            20 Miles
+                                        </label>
+                                    </div>
+                            </div>
+                        <a class="btn btn-info" id = "search-btn" href="#" role="button">Search!</a>
+                    </form>
                 </div>
-                <div class="form-group row">
-                    <label for="example-text-input" class="col-form-label"></label>
-                    <div class="col-10">
-                        <input class="form-control" type="text" placeholder="Tuna" id="example-text-input">
-                    </div>
-                </div>
-                <a class="btn btn-primary btn-lg" id = "search-btn" href="#" role="button">Search!</a>
-            </form>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+
+        <!-- Results -->
+        <div class="container">
+            <duv class="row">
+            </duv>
         </div>
 
         <!-- Panels/cards -->
@@ -53,33 +91,49 @@
             <div class="row">
                 <div class="col-md-4">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad repellat in odio perferendis debitis dolores sit doloremque. Officiis optio perferendis nostrum molestiae totam vel impedit hic ullam, sunt similique.</p>
-                    <a class="btn btn-primary btn-lg" id = "search-btn" href="#" role="button">What!</a>
+                    <a class="btn btn-primary" id = "search-btn" href="#" role="button">What!</a>
                 </div>
                 <div class="col-md-4">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad repellat in odio perferendis debitis dolores sit doloremque. Officiis optio perferendis nostrum molestiae totam vel impedit hic ullam, sunt similique.</p>
-                    <a class="btn btn-primary btn-lg" id = "search-btn" href="#" role="button">Button!</a>
+                    <a class="btn btn-danger" id = "search-btn" href="#" role="button">Button!</a>
 
                 </div>
                 <div class="col-md-4">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad repellat in odio perferendis debitis dolores sit doloremque. Officiis optio perferendis nostrum molestiae totam vel impedit hic ullam, sunt similique.</p>
-                    <a class="btn btn-primary btn-lg" id = "search-btn" href="#" role="button">Test!</a>
+                    <a class="btn btn-warning" id = "search-btn" href="#" role="button">Test!</a>
                 </div>
             </div>
         </div>
-
-        <div class="container">
-            <hr>
-            
-            <div class="footer">
-
+        <br>
+    
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <hr>
+            </div>
+            <div class="col-md-2">
             </div>
         </div>
+        <br> <br> <br> <br> <br>
+        <p> copywrite 2018</p>
+    </div>
 
+    <!-- <div class="footer">
+        <br><br><br>
+
+    </div> -->
+        <!-- jQuery -->
         <script
             src="http://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
+
+        <!-- Bootstrap JS -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+        <!-- Custom JS -->
         <script src="assets/javascript/index.js"></script>
     </body>
 
