@@ -68,7 +68,7 @@ function buttonClick() {
         event.preventDefault();
         let locationValue = $("#location-input").val();
         console.log(locationValue);
-        yelpCall();
+        yelpCall(locationValue);
     });
 }
 
@@ -76,13 +76,13 @@ function buttonClick() {
 // Insert ajax call hereop
 
 // yelp API?
-function yelpCall() {
+function yelpCall(location) {
     $.ajax({
         method: "GET",
         "crossDomain": true,
         headers: yelpHeader,
         "async": true,
-        url: proxyURL + queryURL + locationValue
+        url: proxyURL + queryURL + location
     }).then(function(res, req) {
         console.log(req)
     })
