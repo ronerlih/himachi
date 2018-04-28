@@ -55,9 +55,21 @@ p {
     margin-top: 45px;
 }
 
+.yelp-result-img {
+    height: 320px;
+    width: 320px;
+    padding-right: 10px;
+}
+
+.result-border {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin: 25px 0 0 25px;
+}
+
 .gif-image img {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
 }
 
 .footer {
