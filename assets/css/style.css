@@ -5,11 +5,18 @@ body {
 p {
     font-family: 'Do Hyeon', sans-serif;
     color: black;
+    text-shadow: 2px 2px 2px 2px black;
+    padding: 0.5em;
 }
 
 .nav {
     font-family: 'Black Han Sans', sans-serif;
-    
+    background-color: lightgrey;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
 }
 
 .lead {
@@ -18,12 +25,26 @@ p {
 }
 
 .jumbotron {
-    background-image: url("../images/jumbo.jpeg");
-    height: 100%;
+    background-image: url("../images/jumbo.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    background-position: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: cover;
+    background-color: white;
+    margin-bottom: 0px;
 }
 
-.test {
-    margin-bottom: 20px;
+.form-box {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border-bottom-style: solid;
+    /* border-style: solid; */
+    border-width: .5px;
+    border-color: grey;
+    padding: 8px 8px 8px 8px;
 }
 
 .form-check-label {
@@ -34,11 +55,19 @@ p {
     margin-top: 45px;
 }
 
-footer {
+.gif-image img {
+    height: 250px;
+    width: 250px;
+}
+
+.footer {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 100;
     height: 100px;
     width: 100%;
 }
 
+.footer-text{
+    background-color: white;
+}

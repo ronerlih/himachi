@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8"/>
         <title>Hamachi!</title>
         <!-- Google Fonts CDN -->
         <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Gugi" rel="stylesheet">
@@ -18,61 +19,57 @@
 
     <body>
 
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+                <!-- <h1 class="display-4">Hello, Welcome to Hamachi!</h1> -->
+                <!-- <p class="lead">We'll help you find all the best Japanese food in your area! Just fill out the form below!</p> -->
+        </div>
+
         <!-- Navigation Bar -->
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <img class="logo" src="https://cdn4.iconfinder.com/data/icons/emojis-flat-pixel-perfect/64/emoji-45-512.png" />
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">About Us</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Help!</a>
-            </li>
         </ul>
 
-        <!-- Jumbotron -->
-        <div class="jumbotron">
-            <!-- <h1 class="display-4">Hello, Welcome to Hamachi!</h1> -->
-            <!-- <p class="lead">We'll help you find all the best Japanese food in your area! Just fill out the form below!</p> -->
-            <hr class="my-4">
-        </div>
-
         <div class="contaimer">
-            <div class="row test">
+            <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <form>
+                    <form class="form-box"> 
                         <div class="form-group row">
-                            <label for="location" class="col-form-label"></label>
                             <div class="col-10">
-                                <input class="form-control" text="location" type="text" id="example-text-input">
+                                <label for="location" class="col-form-label">Enter a City, State, or Zipcode!</label>
+                                <input class="form-control" type="text" id="location-input" value="">
                             </div>
                         </div>
                             <div class="col-10">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                        <label class="form-check-label" for="exampleRadios1">
-                                            5 Miles
-                                        </label>
-                                        </div>
-                                        <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        <label class="form-check-label" for="exampleRadios2">
-                                            10 Miles
-                                        </label>
-                                        </div>
-                                        <div class="form-check disabled">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        <label class="form-check-label" for="exampleRadios3">
-                                            20 Miles
-                                        </label>
-                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        5 Miles
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        10 Miles
+                                    </label>
+                                </div>
+                                <div class="form-check disabled">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                    <label class="form-check-label" for="exampleRadios3">
+                                        20 Miles
+                                    </label>
+                                </div>
                             </div>
-                        <a class="btn btn-info" id = "search-btn" href="#" role="button">Search!</a>
+                        <input type="submit" class="btn btn-info" id ="search-btn" href="#" role="button">
                     </form>
                 </div>
                 <div class="col-md-2"></div>
@@ -89,18 +86,11 @@
         <!-- Panels/cards -->
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad repellat in odio perferendis debitis dolores sit doloremque. Officiis optio perferendis nostrum molestiae totam vel impedit hic ullam, sunt similique.</p>
-                    <a class="btn btn-primary" id = "search-btn" href="#" role="button">What!</a>
+                <div class="col-md-4 gif-img random-gif-0">
                 </div>
-                <div class="col-md-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad repellat in odio perferendis debitis dolores sit doloremque. Officiis optio perferendis nostrum molestiae totam vel impedit hic ullam, sunt similique.</p>
-                    <a class="btn btn-danger" id = "search-btn" href="#" role="button">Button!</a>
-
+                <div class="col-md-4 img random-gif-1">
                 </div>
-                <div class="col-md-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad repellat in odio perferendis debitis dolores sit doloremque. Officiis optio perferendis nostrum molestiae totam vel impedit hic ullam, sunt similique.</p>
-                    <a class="btn btn-warning" id = "search-btn" href="#" role="button">Test!</a>
+                <div class="col-md-4 img random-gif-2">
                 </div>
             </div>
         </div>
@@ -117,7 +107,7 @@
             </div>
         </div>
         <br> <br> <br> <br> <br>
-        <p> copywrite 2018</p>
+        <p class="footer-text"> copywrite 2018</p>
     </div>
 
     <!-- <div class="footer">
