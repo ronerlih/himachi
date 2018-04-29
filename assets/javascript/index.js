@@ -1,10 +1,11 @@
 // Yelp API
 var proxyURL = "https://shielded-hamlet-43668.herokuapp.com/";	
-let queryURL = "https://api.yelp.com/v3/businesses/search?term=japanese&location=";
+let queryURL = "https://api.yelp.com/v3/businesses/search?attributes=gender_neutral_restrooms&term=japanese&location=";
 let locationString;
 let radiusString;
-let apiKey = "nRFpFFodXZb24Nyj43Jm52pW5I0A-Wr1-OIh5qYV0er3_5y5TymJViOTGw-Mkam10P_rTdz5BmElL6gyXFA-0EIQMjiEpPDiOx8TEtmWsJd-Amvn8kSE5QAdYj_kWnYx";
 let queryRadius;
+let apiKey = "nRFpFFodXZb24Nyj43Jm52pW5I0A-Wr1-OIh5qYV0er3_5y5TymJViOTGw-Mkam10P_rTdz5BmElL6gyXFA-0EIQMjiEpPDiOx8TEtmWsJd-Amvn8kSE5QAdYj_kWnYx";
+
 
 // Giphy API
 const giphyURL = "https://api.giphy.com/v1/gifs/search?q=";
@@ -55,18 +56,32 @@ function giphy() {
 function buttonClick() {
     $("#search-btn").on("click", function() {
         event.preventDefault();
+        clearResults()
         let locationValue = $("#location-input").val();
-        // console.log(locationValue);
+
+        let val = $("input[name='exampleRadios']:checked").val();
+        
+        // switch (val) {
+        //     case  "1":
+        //         let radiusString = val;
+        //     case "2":
+        //         let radiusString = val;
+        //     case "3":
+        //         let radiusString = val;
+        // }
+
+        // queryRadius = "&radius=" + val;
+        // console.log("test" + " " + radiusString);
+
+
         yelpCall(locationValue);
     });
 }
 
-
-// Insert ajax call hereop
-
 // yelp API
 function yelpCall(location) {
     console.log(location);
+    // console.log("This is a test!!!!" + radius)
     $.ajax({
         method: "GET",
         "crossDomain": true,
@@ -89,21 +104,31 @@ function yelpCall(location) {
 // Render Yelp Results!
 function renderYelp(res) {
 
-    for(let x = 0; x < 4; x++) {
+    for(let x = 0; x < 8; x++) {
         console.log(res);
         console.log(res.businesses[x].name)
+        let yelpName = res.businesses[x].name;
         let yelpImg = res.businesses[x].image_url;
-        let yelpHTML = "<div>"
-                     + '<img class="yelp-result-img" src=' 
+        let yelpHTML = '<div class="card">'
+                     + '<img class="card-img-top yelp-result-img" src=' 
                      + '"' 
                      + yelpImg 
                      + '"' 
                      + ">"
+                     + '<p class="yelp-result-name">'
+                     + yelpName
+                     + '</p>'
                      + "</div>";
 
         $(".grid-item-" + x).append(yelpHTML);
+        $(".random-gifs").hide();
     }
 }
 
 
-
+// Clear results!
+function clearResults() {
+    for(let g = 0; g < 8; g ++) {
+        $(".grid-item-" + g).empty();       
+    }
+}

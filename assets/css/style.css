@@ -1,5 +1,11 @@
+html, body {
+    height: 100%;
+    background-color: beige;
+}
+
 body {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 p {
@@ -27,7 +33,7 @@ p {
 .jumbotron {
     background-image: url("../images/jumbo.jpg");
     background-repeat: no-repeat;
-    height: 300px;
+    height: 20%;
     background-position: center;
     -webkit-background-size: contain;
     -moz-background-size: contain;
@@ -56,9 +62,18 @@ p {
 }
 
 .yelp-result-img {
-    height: 320px;
-    width: 320px;
-    padding-right: 10px;
+    height: 250px;
+    width: 250px;
+    /* padding-right: 10px; */
+}
+
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.yelp-result-name {
+    text-align: center;
 }
 
 .result-border {
@@ -68,18 +83,15 @@ p {
 }
 
 .gif-image img {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
 }
 
 .footer {
-    position: absolute;
-    left: 0;
-    bottom: 100;
-    height: 100px;
-    width: 100%;
+    flex-shrink: 0;
 }
 
 .footer-text{
     background-color: white;
+    margin-bottom: 0px;
 }
