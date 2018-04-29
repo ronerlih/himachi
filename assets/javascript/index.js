@@ -2,8 +2,6 @@
 var proxyURL = "https://shielded-hamlet-43668.herokuapp.com/";	
 let queryURL = "https://api.yelp.com/v3/businesses/search?attributes=gender_neutral_restrooms&term=japanese&location=";
 let locationString;
-let radiusString;
-let queryRadius;
 let apiKey = "nRFpFFodXZb24Nyj43Jm52pW5I0A-Wr1-OIh5qYV0er3_5y5TymJViOTGw-Mkam10P_rTdz5BmElL6gyXFA-0EIQMjiEpPDiOx8TEtmWsJd-Amvn8kSE5QAdYj_kWnYx";
 
 
@@ -58,21 +56,7 @@ function buttonClick() {
         event.preventDefault();
         clearResults()
         let locationValue = $("#location-input").val();
-
         let val = $("input[name='exampleRadios']:checked").val();
-        
-        // switch (val) {
-        //     case  "1":
-        //         let radiusString = val;
-        //     case "2":
-        //         let radiusString = val;
-        //     case "3":
-        //         let radiusString = val;
-        // }
-
-        // queryRadius = "&radius=" + val;
-        // console.log("test" + " " + radiusString);
-
 
         yelpCall(locationValue);
     });
@@ -81,7 +65,6 @@ function buttonClick() {
 // yelp API
 function yelpCall(location) {
     console.log(location);
-    // console.log("This is a test!!!!" + radius)
     $.ajax({
         method: "GET",
         "crossDomain": true,
@@ -91,7 +74,6 @@ function yelpCall(location) {
         },
         url: proxyURL + queryURL + location
     }).then(function(res, req) {
-        // console.log(res)
         renderYelp(res)
 
         let resultBoarder = '<div class="result-border">' 
