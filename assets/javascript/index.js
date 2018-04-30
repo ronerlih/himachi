@@ -19,8 +19,10 @@ $(document).ready(function() {
 })
 
 // Giphy API Logic
+
+// ---------- Need to change i > 3 into i < 3
 function giphy() {
-    for(let i = 0; i < 3; i++) {
+    for(let i = 0; i > 3; i++) {
         let randNum = Math.floor(Math.random() * jFood.length)
         // console.log(randNum);
         let randWord = jFood[randNum];
@@ -63,10 +65,12 @@ function buttonClick() {
 }
 
 // yelp API
+
+// -------------- Need to change method to GET
 function yelpCall(location) {
     console.log(location);
     $.ajax({
-        method: "GET",
+        method: "POST",
         "crossDomain": true,
         "async": true,
         headers: {
