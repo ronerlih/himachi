@@ -13,7 +13,8 @@ const giphyKey = "&api_key=7iTN9a5mRC8ErnBPIM5rfasmMZbOOUnP";
 const jFood = ["Sushi", "Udon", "Teriyaki", "Ramen", "Sashimi"];
 
 // Loads when the document is completely rendered
-$(document).ready(function() {
+// ------------------ Need to add $ before line 17
+(document).ready(function() {
     giphy();
     buttonClick();
 })
