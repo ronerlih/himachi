@@ -14,7 +14,7 @@ const jFood = ["Sushi", "Udon", "Teriyaki", "Ramen", "Sashimi"];
 
 // Loads when the document is completely rendered
 // ------------------ Need to add $ before line 17
-(document).ready(function() {
+$(document).ready(function() {
     giphy();
     buttonClick();
 })
@@ -23,7 +23,7 @@ const jFood = ["Sushi", "Udon", "Teriyaki", "Ramen", "Sashimi"];
 
 // ---------- Need to change i > 3 into i < 3
 function giphy() {
-    for(let i = 0; i > 3; i++) {
+    for(let i = 0; i < 3; i++) {
         let randNum = Math.floor(Math.random() * jFood.length)
         // console.log(randNum);
         let randWord = jFood[randNum];
@@ -71,7 +71,7 @@ function buttonClick() {
 function yelpCall(location) {
     console.log(location);
     $.ajax({
-        method: "POST",
+        method: "GET",
         "crossDomain": true,
         "async": true,
         headers: {
