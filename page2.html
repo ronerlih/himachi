@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148373273-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-148373273-1');
+        </script>
+
+        <meta charset="utf-8"/>
+        <title>Hamachi!</title>
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+        <!-- Google Fonts CDN -->
+        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Gugi" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="assets/css/reset.css">
+
+        <!-- Bootstrap CDN  -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+                <!-- <h1 class="display-4">Hello, Welcome to Hamachi!</h1> -->
+                <!-- <p class="lead">We'll help you find all the best Japanese food in your area! Just fill out the form below!</p> -->
+        </div>
+
+        <!-- Navigation Bar -->
+        <ul class="nav">
+            <li class="nav-item">
+                <img class="logo" src="https://cdn4.iconfinder.com/data/icons/emojis-flat-pixel-perfect/64/emoji-45-512.png" />
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+        </ul>
+
+        <div class="contaimer">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <form class="form-box"> 
+                        <div class="form-group row">
+                            <div class="col-10">
+                                <label for="location" class="col-form-label">Enter a City, State, or Zipcode!</label>
+                                <input class="form-control" type="text" id="location-input" value="">
+                            </div>
+                        </div>
+                            <!-- <div class="col-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="8046.72" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        5 Miles
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="16093.4">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        10 Miles
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="32186.9">
+                                    <label class="form-check-label" for="exampleRadios3">
+                                        20 Miles
+                                    </label>
+                                </div>
+                            </div> -->
+                        <input type="submit" class="btn btn-info" id ="search-btn" href="#" role="button">
+                    </form>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+
+        <!-- Results -->
+
+        <!-- Need to add a 7th div -->
+        <div class='container yelp-results class="grid"'>
+            <div class="row class='masonry-div'">
+                <div class="col-lg-3 grid-item-0"></div>
+                <div class="col-lg-3 grid-item-1"></div>
+                <div class="col-lg-3 grid-item-2"></div>
+                <div class="col-lg-3 grid-item-3"></div>
+                <div class="col-lg-3 grid-item-4"></div>
+                <div class="col-lg-3 grid-item-5"></div>
+                <div class="col-lg-3 grid-item-6"></div>
+            </div>
+        </div>
+
+        <!-- Panels/cards -->
+        <div class="container random-gifs">
+            <h2>Random Japanese Food Related Gifs</h2>
+            <div class="row">
+                <div class="col-md-4 img random-gif-0"></div>
+                <div class="col-md-4 img random-gif-1"></div>
+                <div class="col-md-4 img random-gif-2"></div>
+            </div>
+        </div>
+        <br>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <hr>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+        <br> <br> <br> <br> <br>
+        <p class="footer-text"> Coding Bootcamp Copyright 2018</p>
+    </div>
+
+    <!-- <div class="footer">
+        <br><br><br>
+
+    </div> -->
+
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+        <!-- Custom JS -->
+        <script src="assets/javascript/index.js"></script>
+    </body>
+
+</html>
